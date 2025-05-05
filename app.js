@@ -60,6 +60,6 @@ app.listen(500,() => {
 })
 
 
-mongoose.connect('mongodb+srv://game05343:MVnFl5XRRUXLLI78@balqeessystemcuster.wuq1eii.mongodb.net/myDatabase?retryWrites=true&w=majority&appName=BalqeesSystemCuster')
+mongoose.connect('mongodb+srv://game05343:edddeeeedeeeeeddeededeee@balqeessystemcuster.wuq1eii.mongodb.net/?retryWrites=true&w=majority&appName=BalqeesSystemCuster')
   .then(() => console.log('✅ Connected to MongoDB Atlas'))
   .catch((err) => console.error('❌ MongoDB connection error:', err));
