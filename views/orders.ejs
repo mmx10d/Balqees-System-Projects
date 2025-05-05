@@ -5,14 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../style/allpage.css">
     <link rel="stylesheet" href="../style/orders.css">
-    <title>BALQEES SYSTEM</title>
+    <title>إدارة المنتجات
+    </title>
 </head>
 <body>
     <button id="add_button" class="scale_animation">+</button>
     <div id="body">
         <div id="order_informations">
             <span id="order_informations_span_name">order</span>
-            <span>count</span>
+            <span>العدد</span>
             <div></div>
         </div>
         <div id="order_product_div">
@@ -34,24 +35,24 @@
             </div>
         </div>
         <div>
-            <button id="print_btn" class="scale_animation">print</button>
+            <button id="print_btn" class="scale_animation">طباعة</button>
         </div>
     </div>
     <div class="order_add_div info_show" style="display: none">
-        <span>Add Order</span>
+        <span>اضافة طلب</span>
         <div>
-            <input type="text" placeholder="name" id="order_add_name_input">
-            <span>order</span>
+            <input type="text" placeholder="اسم" id="order_add_name_input">
+            <span>الطلب</span>
         </div>
         <div>
             <select id="order_add_select">
-                <option value="amount">amount</option>
-                <option value="kg">kg</option>
+                <option value="حبة">كمية</option>
+                <option value="وزن">وزن</option>
             </select>
-            <input type="number" placeholder="count" id="order_add_count_input">
-            <span>count</span>
+            <input type="number" placeholder="1" id="order_add_count_input">
+            <span>عدد</span>
         </div>
-        <button id="order_add_add_btn">add</button>
+        <button id="order_add_add_btn">اضافة</button>
     </div>
 <script src="../script/allpage.js"></script>
 <script src="../script/orders.js"></script>

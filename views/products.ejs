@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../style/allpage.css">
     <link rel="stylesheet" href="../style/products.css">
-    <title>BALQEES SYSTEM</title>
+    <title>إدارة المنتجات
+    </title>
 </head>
 <body>
     <div id="search_div">
-        <input type="text" placeholder="search" id="search_input">
+        <input type="text" placeholder="بحث" id="search_input">
         <div id="search_btn">
             <img src="../images/icons/search.png">
         </div>
@@ -26,23 +27,23 @@
         </div>
         <div>
             <input type="text" placeholder="name" id="add_product_name_input">
-            <span>name</span>
+            <span>الاسم</span>
         </div>
         <div>
             <input type="number" placeholder="price"  id="add_product_price_input">
-            <span>price</span>
+            <span>السعر</span>
         </div>
         <div>
             <input type="date" id="add_product_date_input">
-            <span>expire</span>
+            <span>الانتهاء</span>
         </div>
         <div>
             <input type="text" placeholder="original, small"  id="add_product_description_input">
-            <span>description</span>
+            <span>الوصف</span>
         </div>
         <div id="add_product_btns">
-            <button id="add_product_add_btn">add</button>
-            <button id="add_product_cancel_btn">cancel</button>
+            <button id="add_product_add_btn">اضافه</button>
+            <button id="add_product_cancel_btn">الغاء</button>
         </div>
     </div>
     <div class="product_show_information info_show" style="display: none;">
@@ -50,27 +51,28 @@
             <div>
                 <img src="/images/products/almond.png" id="product_show_information_photo_img">
             </div>
-            <span>photo</span>
+            <span>الصورة</span>
         </div>
         <div>
             <span id="product_show_information_name_span">--</span>
-            <span>name</span>
+            <span>الاسم</span>
         </div>
         <div>
             <span id="product_show_information_price_span">--</span>
-            <span>price</span>
+            <span>السعر</span>
         </div>
         <div>
-            <span id="product_show_information_expire_span">y-- m-- d--</span>
-            <span>expire</span>
+            <span id="product_show_information_expire_span">س-- ش-- ي--</span>
+            <span>الانتهاء</span>
         </div>
         <div>
             <span id="product_show_information_description_span">--</span>
-            <span>description</span>
+            <span>الوصف</span>
         </div>
         <div>
-            <button id="product_show_information_close_btn">close</button>
-            <button id="product_show_information_edit_btn">edit</button>
+            <button id="product_show_information_close_btn">اغلاق</button>
+            <button id="product_show_information_remove_btn">حذف</button>
+            <button id="product_show_information_edit_btn">تعديل</button>
         </div>
     </div>
 <script src="../script/allpage.js"></script>

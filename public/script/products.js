@@ -17,6 +17,7 @@ const add_product_description_input = document.querySelector('#add_product_descr
 
 const product_show_information = document.querySelector('.product_show_information')
 const product_show_information_close_btn = document.querySelector('#product_show_information_close_btn');
+const product_show_information_remove_btn = document.querySelector('#product_show_information_remove_btn');
 const product_show_information_edit_btn = document.querySelector('#product_show_information_edit_btn');
 const product_show_information_photo_img = document.querySelector('#product_show_information_photo_img');
 const product_show_information_name_span = document.querySelector('#product_show_information_name_span');
@@ -47,9 +48,9 @@ let add_product_price = 0;
 let products = [
     {
         photo: '/images/products/coffee.png',
-        name: 'coffee',
+        name: 'قهوة',
         price: '40',
-        description: 'harrary coffee from habshah',
+        description: 'هرري اصلي ماهي تقليد',
         date:{
             year: '2200',
             month: '01',
@@ -58,9 +59,9 @@ let products = [
     },
     {
         photo: '/images/products/chia.png',
-        name: 'chia seeds',
+        name: 'بذور الشيا',
         price: '70',
-        description: 'do in water 10minuts and it be big',
+        description: 'حطه بمويه 10 دقايق تساعد السمين على النحف',
         date:{
             year: '2200',
             month: '06',
@@ -69,9 +70,9 @@ let products = [
     },
     {
         photo: '/images/products/pistachio.png',
-        name: 'pistachio',
+        name: 'فستق',
         price: '60',
-        description: 'is jambo and super',
+        description: 'جامبو سوبر درجه اولى',
         date:{
             year: '2027',
             month: '01',
@@ -114,10 +115,10 @@ add_photo_div.onclick = () => {
 uploade_photo.onchange = (e)=> {
     file = e.target.files[0];
     if(file.type != 'image/gif'){
-        alert('can uploade only photo');
+        alert('تقدر تحمل الصور فقط');
     }
     else {
-        alert('succufull');
+        alert('نجح التحميل');
         //come back letter and fix it with added_photo_ready and added input
     }
 }
@@ -204,14 +205,27 @@ product_show_information_edit_btn.onclick = () => {
     add_product_price_input.value = products[last_click_of_product].price;
     add_product_date_input.value = `${products[last_click_of_product].date.year}-${products[last_click_of_product].date.month}-${products[last_click_of_product].date.day}`;
     add_product_description_input.value = products[last_click_of_product].description;
-    add_product_add_btn.innerText = 'save';
+    add_product_add_btn.innerText = 'حفظ';
+}
+product_show_information_remove_btn.onclick = () => {
+    product_show_information.style.display = 'none';
+    products.splice(last_click_of_product,1);
+    product_div.innerHTML = '';
+    update_products();
 }
 
 let search;
 search_btn.onclick = () => {
     search = search_input.value.trim();
-    if(search!=''){
-        search_in_products(search);
+    if(search_input.value!='[update]'){
+        if(search!=''){
+            search_in_products(search);
+        }
+    }
+    else {
+        add_more_products();
+        product_div.innerHTML = '';
+        update_products();
     }
 }
 
@@ -311,8 +325,81 @@ function search_in_products (name){
         }
     }
     else{
-        alert('Products not found...');
+        alert('لم يتم العثور على المنتج..');
     }
+}
+function add_more_products(){
+    products.push({
+        "photo": "https://cdn.pixabay.com/photo/2016/11/29/04/17/cumin-1867398_960_720.jpg",
+        "name": "بذور الكمون",
+        "price": "25",
+        "description": "تستخدم في الطهي ولها فوائد صحية متعددة",
+        "date": { "year": "2025", "month": "06", "day": "15" }
+      },
+      {
+        "photo": "https://cdn.pixabay.com/photo/2017/07/22/10/17/coriander-2529186_960_720.jpg",
+        "name": "بذور الكزبرة",
+        "price": "20",
+        "description": "تُضفي نكهة مميزة على الأطباق",
+        "date": { "year": "2025", "month": "06", "day": "25" }
+      },
+      {
+        "photo": "https://cdn.pixabay.com/photo/2019/03/14/15/06/fennel-seeds-4055263_960_720.jpg",
+        "name": "بذور الشمر",
+        "price": "30",
+        "description": "مفيدة للهضم وتستخدم في المشروبات",
+        "date": { "year": "2025", "month": "07", "day": "05" }
+      },
+      {
+        "photo": "https://cdn.pixabay.com/photo/2018/02/02/17/29/nature-3125912_960_720.jpg",
+        "name": "بذور الهيل",
+        "price": "45",
+        "description": "تستخدم في القهوة والحلويات",
+        "date": { "year": "2025", "month": "07", "day": "15" }
+      },
+      {
+        "photo": "https://cdn.pixabay.com/photo/2017/01/06/23/21/cloves-1959573_960_720.jpg",
+        "name": "بذور القرنفل",
+        "price": "35",
+        "description": "مطهرة ومفيدة لصحة الفم",
+        "date": { "year": "2025", "month": "07", "day": "25" }
+      },
+      {
+        "photo": "https://cdn.pixabay.com/photo/2016/11/22/18/14/mustard-1850656_960_720.jpg",
+        "name": "بذور الخردل",
+        "price": "18",
+        "description": "تستخدم في الصلصات والمخللات",
+        "date": { "year": "2025", "month": "08", "day": "04" }
+      },
+      {
+        "photo": "https://cdn.pixabay.com/photo/2016/03/05/19/02/caraway-1238253_960_720.jpg",
+        "name": "بذور الكراوية",
+        "price": "28",
+        "description": "تساعد في تخفيف آلام البطن",
+        "date": { "year": "2025", "month": "08", "day": "14" }
+      },
+      {
+        "photo": "https://cdn.pixabay.com/photo/2016/03/05/21/33/sesame-1238680_960_720.jpg",
+        "name": "بذور السمسم",
+        "price": "22",
+        "description": "غنية بالكالسيوم وتستخدم في الخبز",
+        "date": { "year": "2025", "month": "08", "day": "24" }
+      },
+      {
+        "photo": "https://cdn.pixabay.com/photo/2016/11/29/09/22/dill-1868758_960_720.jpg",
+        "name": "بذور الشبت",
+        "price": "26",
+        "description": "تضاف إلى الأطباق والمخللات",
+        "date": { "year": "2025", "month": "09", "day": "03" }
+      },
+      {
+        "photo": "https://cdn.pixabay.com/photo/2016/03/05/22/06/celery-1239424_960_720.jpg",
+        "name": "بذور الكرفس",
+        "price": "40",
+        "description": "تُستخدم في الحساء والسلطات",
+        "date": { "year": "2025", "month": "09", "day": "13" }
+      },
+    )
 }
 
 update_products();

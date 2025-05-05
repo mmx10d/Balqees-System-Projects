@@ -2,6 +2,7 @@
     --color--: rgb(54, 173, 252);
     --hover--: rgb(40, 137, 202);
     --special_btn--: rgb(228, 138, 3);
+    --special_hover--: rgb(201, 125, 11);
     --close--: rgb(236, 19, 19);
     --ok--: rgb(42, 221, 7);
     --green_hover--: rgb(13, 161, 8);
@@ -12,7 +13,7 @@
     padding: 0;
     margin: 0;
     font-size: x-large;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     transition: 0.1s;
 }
 body {

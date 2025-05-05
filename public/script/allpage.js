@@ -5,18 +5,18 @@ document.body.innerHTML=`
             <img src="../images/icons/menu.png">
         </div>
         <span id="title_span">
-            BALQEES SYSTEM
+            إدارة المنتجات
         </span>
     </div>
     <div class="bar_window" style="display: none;">
-        <div id="bar_home_btn" class="btn_head">HOME</div>
-        <div id="bar_products_btn" class="btn_head">Products</div>
-        <div id="bar_calculator_btn" class="btn_head">Calcuotaor</div>
-        <div id="bar_date_btn" class="btn_head">date</div>
-        <div id="bar_orders_btn" class="btn_head">Orders</div>
-        <div id="bar_price_calculator_btn" class="btn_head">Price calcutalor</div>
-        <div id="bar_more_btn" class="btn_head">MORE</div>
-        <span class="by_mmx10d">By MMX10d</span>
+        <div id="bar_home_btn" class="btn_head">الصفحة الرئيسية</div>
+        <div id="bar_products_btn" class="btn_head">المنتجات</div>
+        <div id="bar_calculator_btn" class="btn_head">حاسبة</div>
+        <div id="bar_date_btn" class="btn_head">تاريخ</div>
+        <div id="bar_orders_btn" class="btn_head">طلبات</div>
+        <div id="bar_price_calculator_btn" class="btn_head">حاسبة الأسعار</div>
+        <div id="bar_more_btn" class="btn_head">اخرى</div>
+        <span class="by_mmx10d">عواد معمر عبده عبدالله</span>
     </div>
     <div class="bar_full" style="display: none;"></div>
 `;

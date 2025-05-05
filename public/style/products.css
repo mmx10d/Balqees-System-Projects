@@ -111,7 +111,7 @@ body{
     border: none;
     border-radius: 100px;
     color: black;
-    background: var(--close--);
+    background: var(--special_btn--);
     cursor: pointer;
     margin-right: 5px;
 }
@@ -125,8 +125,21 @@ body{
     cursor: pointer;
     margin-right: 5px;
 }
+#product_show_information_remove_btn {
+    width: 100px;
+    height: 50px;
+    border: none;
+    border-radius: 100px;
+    color: black;
+    background: var(--close--);
+    cursor: pointer;
+    margin-right: 5px;
+}
+#product_show_information_remove_btn:hover {
+    background: var(--red_hover--);
+}
 #product_show_information_close_btn:hover {
-    background: var(--red_hover--)
+    background: var(--special_hover--)
 }
 #product_show_information_edit_btn:hover {
     background: var(--green_hover--);

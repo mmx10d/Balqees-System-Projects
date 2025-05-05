@@ -7,31 +7,31 @@ let wanted_date = Number(end_left_count.value);
 let products = [
     {
         photo: '/images/products/coffee.png',
-        name: 'coffee',
+        name: 'قهوة',
         price: '40',
-        description: 'harrary coffee from habshah',
+        description: 'هرري اصلي ماهي تقليد',
         date:{
-            year: '2029',
+            year: '2200',
             month: '01',
             day: '01'
         }
     },
     {
         photo: '/images/products/chia.png',
-        name: 'chia seeds',
+        name: 'بذور الشيا',
         price: '70',
-        description: 'do in water 10minuts and it be big',
+        description: 'حطه بمويه 10 دقايق تساعد السمين على النحف',
         date:{
-            year: '2028',
+            year: '2200',
             month: '06',
             day: '01'
         }
     },
     {
         photo: '/images/products/pistachio.png',
-        name: 'pistachio',
+        name: 'فستق',
         price: '60',
-        description: 'is jambo and super',
+        description: 'جامبو سوبر درجه اولى',
         date:{
             year: '2027',
             month: '01',
@@ -40,7 +40,7 @@ let products = [
     },
     {
         photo: '/images/products/pistachio.png',
-        name: 'hair oil',
+        name: 'زيت الشعر',
         price: '60',
         description: 'is jambo and super',
         date:{
@@ -51,7 +51,7 @@ let products = [
     },
     {
         photo: '/images/products/pistafchio.png',
-        name: 'rosmairy oil',
+        name: 'زيت اكليل الجبل',
         price: '60',
         description: 'is jambo and super',
         date:{
@@ -87,7 +87,7 @@ function update_ends_products(){
                 <div class="end_products">
                     <span class="end_products_name_span">${products[i].name}</span>
                     <div>
-                        <span>day</span>
+                        <span>يوم</span>
                         <span id="end_products_count_day_span">${count_day}</span>
                     </div>
                     <button class="end_products_btn scale_animation">✅</button>
@@ -113,7 +113,7 @@ function update_ends_products(){
         }
     }
     else {
-        alert('not products is near end');
+        alert('لاتوجد منتجات قريبة الانتهاء');
     }
 }
 function delete_ends_products(id){

@@ -11,13 +11,13 @@ const order_add_add_btn = document.querySelector('#order_add_add_btn');
 
 let orders = [
     {
-        name:'cumin nuts',
-        count_type: 'kg',
+        name:'كمون حب',
+        count_type: 'كيلو',
         count: 5
     },
     {
-        name:'rosmary oil',
-        count_type: 'amount',
+        name:'زيت اكليل الجبل',
+        count_type: 'حبة',
         count: 15
     }
 ];
@@ -28,15 +28,19 @@ add_button.onclick = () => {
 }
 
 order_add_add_btn.onclick = () => {
-    order_add_div.style.display = 'none';
-    orders.push(
-        {
-            name: order_add_name_input.value,
-            count_type: order_add_select.value,
-            count: Number(order_add_count_input.value)
-        }
-    )
-    update_orders();
+    if(order_add_name_input.value!=''){
+        order_add_div.style.display = 'none';
+        orders.push(
+            {
+                name: order_add_name_input.value,
+                count_type: order_add_select.value,
+                count: Number(order_add_count_input.value)
+            }
+        )
+        update_orders();
+    }else{
+        alert('ادخل اسم الطلب')
+    }
 }
 print_btn.onclick =() => {
     order_add_div.style.display = 'none';
@@ -70,6 +74,6 @@ function update_orders() {
 }
 function clear_order_add(){
     order_add_name_input.value = '';
-    order_add_select.value = 'amount';
+    order_add_select.value = 'حبة';
 }
 update_orders();

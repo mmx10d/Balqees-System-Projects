@@ -60,11 +60,6 @@ app.listen(500,() => {
 })
 
 
-mongoose
-.connect('mongodb+srv://game05343:yfw9zrJzX49THHWD@balqeessystemcuster.wuq1eii.mongodb.net/?retryWrites=true&w=majority&appName=BalqeesSystemCuster')
-.then(()=>{
-    console.log()
-})
-.catch((error)=> {
-    console.log(error);
-});
+mongoose.connect('mongodb+srv://game05343:MVnFl5XRRUXLLI78@balqeessystemcuster.wuq1eii.mongodb.net/myDatabase?retryWrites=true&w=majority&appName=BalqeesSystemCuster')
+  .then(() => console.log('✅ Connected to MongoDB Atlas'))
+  .catch((err) => console.error('❌ MongoDB connection error:', err));

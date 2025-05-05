@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            display: flex;
+            flex-direction: column-reverse;
+            justify-content: center;
+            text-align: center;
+        }
+    </style>
+    <title>طباعة</title>
+</head>
+<body>
+    <table border="1" id="table_body">
+        <tr>
+            <th>اسم</th>
+            <th>عدد</th>
+        </tr>
+    </table>
+    <h1 onclick="location.href='/'">طلبيات - بلقيس للعطارة</h1>
+    <script>
+        let table_body = document.querySelector('#table_body');
+        let orders = [
+    {
+        name:'كمون حب',
+        count_type: 'كيلو',
+        count: 5
+    },
+    {
+        name:'زيت اكليل الجبل',
+        count_type: 'حبة',
+        count: 15
+    }
+];
+i = 0;
+while(i < orders.length){
+    table_body.innerHTML += `
+        <tr style="dir">
+            <td>${orders[i].name}</td>
+            <td style="display: flex;justify-content: center;text-align: center;"> <div> ${orders[i].count_type} </div> <div style="margin: 0 0 0 5px"> ${orders[i].count} </div></td>
+        </tr>
+    `;
+    i++;
+}
+    </script>
+    <script>
+        print();
+    </script>
+</body>
+</html>

@@ -5,97 +5,98 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../style/allpage.css">
     <link rel="stylesheet" href="../style/other_earning.css">
-    <title>BALQEES SYSTEM</title>
+    <title>إدارة المنتجات
+    </title>
 </head>
 <body>
     <div id="body_other_earning">
         <div>
             <input type="number" placeholder="0" id="price_input" class="input_number scale_animation">
-            <span>price</span>
+            <span>السعر</span>
         </div>
         <div>
             <input type="number" placeholder="1" id="count_input" class="input_number scale_animation">
-            <span>count</span>
+            <span>العدد</span>
         </div>
         <div id="radio_choose">
             <div>
                 <input type="radio" id="what_radio" class="input_radio">
-                <span id="what_radio_span">what if</span>
+                <span id="what_radio_span">ماذا لو</span>
             </div>
             <div>
                 <input type="radio" id="clean_radio" class="input_radio" checked>
-                <span id="clean_radio_span">clean earning</span>
+                <span id="clean_radio_span">ارباح صافي</span>
             </div>
         </div>
         <div id="clean_div">
-            <input type="number" placeholder="clean earning" class="input_number scale_animation" id="clean_earning">
+            <input type="number" placeholder="ارباح صافي" class="input_number scale_animation" id="clean_earning">
         </div>
         <div class="hide" id="what_div">
             <div>
                 <span id="what_div_for_one_span">--</span>
-                <span>for one</span>
+                <span>للفردي</span>
             </div>
-            <input type="number" placeholder="i sell it with" class="input_number scale_animation" id="what_div_sell_it_input">
+            <input type="number" placeholder="بعته بسعر" class="input_number scale_animation" id="what_div_sell_it_input">
         </div>
-        <button id="agree" class="scale_animation">Agree</button>
-        <button id="clear" style="display: none;">clear</button>
+        <button id="agree" class="scale_animation">موافق</button>
+        <button id="clear" style="display: none;">مسح</button>
         <div id="earning_net_div" style="display: none;" class="info_show">
-            <span>Clean Earning</span>
+            <span>ارباح صافي</span>
             <hr>
             <div>
                 <div>
                     <span id="net_div_price_span">--</span>
-                    <span>price</span>
+                    <span>السعر</span>
                 </div>
                 <div>
                     <span id="net_div_count_span">--</span>
-                    <span>count</span>
+                    <span>العدد</span>
                 </div>
                 <div>
                     <span id="net_div_for_one_span">--</span>
-                    <span>for one</span>
+                    <span>للفردي</span>
                 </div>
                 <div>
                     <span id="net_div_required_earn_span">--</span>
-                    <span>required earn</span>
+                    <span>الارباح المطلوبة</span>
                 </div>
                 <div>
-                    <span>sell price:</span>
+                    <span>سعر البيع:</span>
                 </div>
                 <span id="net_div_sell_price_span">--</span>
             </div>
-            <button id="net_div_close_btn" onclick="closealldiv()">close</button>
+            <button id="net_div_close_btn" onclick="closealldiv()">اغلاق</button>
         </div>
         <div id="what_earn_div" style="display: none;" class="info_show">
-            <span>Clean Earning</span>
+            <span>ارباح صافي</span>
             <hr>
             <div>
                 <div>
                     <span id="what_earn_div_price_span">--</span>
-                    <span>price</span>
+                    <span>السعر</span>
                 </div>
                 <div>
                     <span id="what_earn_div_count_span">--</span>
-                    <span>count</span>
+                    <span>العدد</span>
                 </div>
                 <div>
                     <span id="what_earn_div_for_one_span">--</span>
-                    <span>for one</span>
+                    <span>للفردي</span>
                 </div>
                 <div>
                     <span id="what_earn_div_required_sell_sapn">--</span>
-                    <span>required Sell</span>
+                    <span>الارباح المطلوبة</span>
                 </div>
                 <div>
                     <span id="what_earn_div_total_span">--</span>
-                    <span>total</span>
+                    <span>المجموع</span>
                 </div>
                 <div>
-                    <span>earn:</span>
+                    <span>الربح:</span>
                 </div>
                 <span id="what_earn_div_earn_span">--</span>
             </div>
-            <button id="net_div_close_btn" onclick="closealldiv()">close</button>
+            <button id="net_div_close_btn" onclick="closealldiv()">اغلاق</button>
         </div>
     </div>
 
