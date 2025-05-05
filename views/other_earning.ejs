@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/allpage.css">
+    <link rel="stylesheet" href="../style/other_earning.css">
+    <title>BALQEES SYSTEM</title>
+</head>
+<body>
+    <div id="body_other_earning">
+        <div>
+            <input type="number" placeholder="0" id="price_input" class="input_number scale_animation">
+            <span>price</span>
+        </div>
+        <div>
+            <input type="number" placeholder="1" id="count_input" class="input_number scale_animation">
+            <span>count</span>
+        </div>
+        <div id="radio_choose">
+            <div>
+                <input type="radio" id="what_radio" class="input_radio">
+                <span id="what_radio_span">what if</span>
+            </div>
+            <div>
+                <input type="radio" id="clean_radio" class="input_radio" checked>
+                <span id="clean_radio_span">clean earning</span>
+            </div>
+        </div>
+        <div id="clean_div">
+            <input type="number" placeholder="clean earning" class="input_number scale_animation" id="clean_earning">
+        </div>
+        <div class="hide" id="what_div">
+            <div>
+                <span id="what_div_for_one_span">--</span>
+                <span>for one</span>
+            </div>
+            <input type="number" placeholder="i sell it with" class="input_number scale_animation" id="what_div_sell_it_input">
+        </div>
+        <button id="agree" class="scale_animation">Agree</button>
+        <button id="clear" style="display: none;">clear</button>
+        <div id="earning_net_div" style="display: none;" class="info_show">
+            <span>Clean Earning</span>
+            <hr>
+            <div>
+                <div>
+                    <span id="net_div_price_span">--</span>
+                    <span>price</span>
+                </div>
+                <div>
+                    <span id="net_div_count_span">--</span>
+                    <span>count</span>
+                </div>
+                <div>
+                    <span id="net_div_for_one_span">--</span>
+                    <span>for one</span>
+                </div>
+                <div>
+                    <span id="net_div_required_earn_span">--</span>
+                    <span>required earn</span>
+                </div>
+                <div>
+                    <span>sell price:</span>
+                </div>
+                <span id="net_div_sell_price_span">--</span>
+            </div>
+            <button id="net_div_close_btn" onclick="closealldiv()">close</button>
+        </div>
+        <div id="what_earn_div" style="display: none;" class="info_show">
+            <span>Clean Earning</span>
+            <hr>
+            <div>
+                <div>
+                    <span id="what_earn_div_price_span">--</span>
+                    <span>price</span>
+                </div>
+                <div>
+                    <span id="what_earn_div_count_span">--</span>
+                    <span>count</span>
+                </div>
+                <div>
+                    <span id="what_earn_div_for_one_span">--</span>
+                    <span>for one</span>
+                </div>
+                <div>
+                    <span id="what_earn_div_required_sell_sapn">--</span>
+                    <span>required Sell</span>
+                </div>
+                <div>
+                    <span id="what_earn_div_total_span">--</span>
+                    <span>total</span>
+                </div>
+                <div>
+                    <span>earn:</span>
+                </div>
+                <span id="what_earn_div_earn_span">--</span>
+            </div>
+            <button id="net_div_close_btn" onclick="closealldiv()">close</button>
+        </div>
+    </div>
+
+<script src="../script/allpage.js"></script>
+<script src="../script/other_earning.js"></script>
+</body>
+</html>

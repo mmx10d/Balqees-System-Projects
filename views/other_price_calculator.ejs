@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/allpage.css">
+    <link rel="stylesheet" href="../style/other_price_calculator.css">
+    <title>BALQEES SYSTEM</title>
+</head>
+<body>
+    <div id="body_price_calculator">
+        <div>
+            <input type="number" id="price_input" placeholder="0" class="scale_animation">
+            <span>price</span>
+        </div>
+        <div>
+            <input type="number" id="count_input" placeholder="1" class="scale_animation">
+            <span>count</span>
+        </div>
+        <button id="agree" class="scale_animation">agree</button>
+    </div>
+    <div id="price_calculator_div" class="info_show" style="display: none;">
+        <span>Price total</span>
+        <hr>
+        <div>
+            <div>
+                <span id="price_span">--</span>
+                <span>price</span>
+            </div>
+            <div>
+                <span id="count_span">--</span>
+                <span>count</span>
+            </div>
+            <div>
+                <span>total:</span>
+            </div>
+            <span id="total_span">--</span>
+        </div>
+        <button id="close_btn">close</button>
+        <button id="earning_btn">earnings</button>
+    </div>
+<script src="../script/allpage.js"></script>
+<script src="../script/other_price_calculator.js"></script>
+</body>
+</html>

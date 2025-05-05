@@ -1,0 +1,6 @@
+#ends_btn {
+    background: var(--close--);
+}
+#ends_btn:hover {
+    background: var(--red_hover--);
+}

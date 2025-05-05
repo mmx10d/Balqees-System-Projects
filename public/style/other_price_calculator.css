@@ -1,0 +1,51 @@
+body {
+    width: 100vw;
+    height: 100vh;
+}
+#body_price_calculator {
+    width: 80%;
+    height: 30%;
+    translate: -50% 0;
+    display: flex;
+    position: relative;
+    left: 50%;
+    top: 10%;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+#agree{
+    width: 100px;
+    height: 50px;
+    border: none;
+    border-radius: 100px;
+    background: var(--special_btn--)
+}
+#agree:hover {
+    background: rgb(179, 109, 6);
+    cursor: pointer;
+}
+#close_btn {
+    width: 100px;
+    height: 50px;
+    border: none;
+    border-radius: 100px;
+    color: black;
+    background: var(--close--);
+    cursor: pointer;
+}
+#earning_btn {
+    width: 100px;
+    height: 50px;
+    border: none;
+    border-radius: 100px;
+    color: black;
+    background: var(--ok--);
+    cursor: pointer;
+}
+#earning_btn:hover {
+    background: var(--green_hover--);
+}
+#close_btn:hover {
+    background: var(--red_hover--);
+}

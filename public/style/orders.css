@@ -1,0 +1,111 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#body {
+    width: 80vw;
+    margin: 5px 0 0 0;
+    height: max-content;
+    max-height: 80vh;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    text-align: center;
+}
+#order_informations {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin: 5px 0;
+}
+#order_informations_span_name {
+    padding: 0 0 0 5vw;
+}
+#order_informations_span_done {
+    padding: 0 2vw 0 0;
+}
+#print_btn {
+    width: 100px;
+    height: 50px;
+    border: none;
+    border-radius: 100px;
+    color: black;
+    background: var(--ok--);
+    cursor: pointer;
+    margin-right: 5px;
+}
+#print_btn:hover {
+    background: var(--green_hover--);
+}
+#add_button {
+    margin: 0 10px 0 0;
+    width: 8vw;
+    height: 8vh;
+    border: none;
+    border-radius: 100px;
+    background: var(--color--);
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: 10px;
+}
+#add_button:hover {
+    background: var(--hover--);
+}
+#order_add_add_btn {
+    width: 100px;
+    height: 50px;
+    border: none;
+    border-radius: 100px;
+    color: black;
+    background: var(--ok--);
+    cursor: pointer;
+    margin-right: 5px;
+}
+#order_add_add_btn:hover {
+    background: var(--green_hover--)
+}
+.order_products {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid black;
+    border-radius: 50px;
+    margin: 10px 0;
+    width: 99.5%;
+    height: 10vh;
+}
+.order_products button {
+    background: var(--close--);
+    width: 13%;
+    border: none;
+    border-radius: 100px;
+    position: relative;
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-drag: none
+}
+.order_products button:hover {
+    background: var(--red_hover--);
+}
+.order_products span {
+    display: flex;
+    align-items: center;
+}
+.order_products div {
+    display: flex;
+}
+.order_products div span {
+    margin: 0 5px;
+}
+.order_products_name_span {
+    padding: 0 0 0 5vw;
+}
+.order_add_div {
+    width: max-content;
+    height: max-content;
+}
+.order_add_div div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}

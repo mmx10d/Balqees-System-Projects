@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style/allpage.css">
+    <title>BALQEES SYSTEM</title>
+</head>
+<body>
+    <div class="body">
+        <div id="products_btn" class="btn_head scale_animation">products</div>
+        <div id="calc_btn" class="btn_head scale_animation">Calc</div>
+        <div id="data_btn" class="btn_head scale_animation">data and order</div>
+        <div id="price_calculator_btn" class="btn_head scale_animation">Price Calculator</div>
+    </div>
+    <div class="add_product_btn scale_animation">+</div>
+    <div id="add_product_div" class="info_show" style="display: none;">
+        <span>Add Product</span>
+        <div>
+            <input type="file">
+        </div>
+        <div>
+            <input type="text" placeholder="name">
+            <span>name</span>
+        </div>
+        <div>
+            <input type="text" placeholder="price">
+            <span>price</span>
+        </div>
+        <div>
+            <select>
+                <option value="m">m</option>
+                <option value="h">h</option>
+            </select>
+            <input type="number" placeholder="year" max="2080" min="2025">
+            <input type="number" placeholder="month" max="12" min="1">
+            <input type="number" placeholder="day" max="31" min="1">
+            <button><</button>
+        </div>
+        <div>
+            <input type="text">
+            <span>description</span>
+        </div>
+        <button>add</button>
+        <button>cancel</button>
+    </div>
+<script src="/script/allpage.js"></script>
+</body>
+</html>

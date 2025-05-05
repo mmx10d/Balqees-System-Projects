@@ -1,0 +1,199 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#search_div {
+    display: flex;
+    margin-bottom: 10px;
+}
+#search_btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    height: 10vh;
+    margin-left: 5px;
+}
+#search_btn:hover {
+    cursor: pointer;
+}
+#search_btn img {
+    width: 100%;
+    height: 100%;
+}
+#search_input {
+    height: 10vh;
+    width: 60vw;
+    font-size: larger;
+}
+#add_photo_div {
+    width: 100px;
+    height: 100px;
+    border-radius: calc(100%/2);
+    background: rgb(165, 165, 165);
+    margin: 10px auto;
+    display: flex;
+    flex-direction: column;
+}
+#add_photo_div:hover {
+    background: rgb(141, 141, 141);
+    cursor: pointer;
+}
+#add_photo_div span {
+    font-size: medium;
+    margin: 0 auto;
+    user-select: none;
+}
+#add_photo_div img {
+    width: 100%;
+    height: 100%;
+    border-radius: calc(100%/2);
+}
+#add_product_div div {
+    display: flex;
+    flex-direction: row;
+}
+#add_product_div span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#add_product_div input {
+    width: 85%;
+    margin: 5px 0;
+}
+#add_product_select {
+    border-radius: 20px;
+}
+#add_product_btns {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+#add_product_add_btn {
+    width: 100px;
+    height: 50px;
+    border: none;
+    border-radius: 100px;
+    color: black;
+    background: var(--ok--);
+    cursor: pointer;
+    margin-left: 5px;
+}
+#add_product_cancel_btn {
+    width: 100px;
+    height: 50px;
+    border: none;
+    border-radius: 100px;
+    color: black;
+    background: var(--close--);
+    cursor: pointer;
+    margin-right: 5px;
+}
+#add_product_add_btn:hover {
+    background: var(--green_hover--);
+}
+#add_product_cancel_btn:hover {
+    background: var(--red_hover--)
+}
+#choose_uploade_or_link_div {
+    position: absolute;
+}
+#choose_uploade_or_link_div input {
+    width: max-content;
+    height: max-content;
+}
+#product_show_information_close_btn{
+    width: 100px;
+    height: 50px;
+    border: none;
+    border-radius: 100px;
+    color: black;
+    background: var(--close--);
+    cursor: pointer;
+    margin-right: 5px;
+}
+#product_show_information_edit_btn {
+    width: 100px;
+    height: 50px;
+    border: none;
+    border-radius: 100px;
+    color: black;
+    background: var(--ok--);
+    cursor: pointer;
+    margin-right: 5px;
+}
+#product_show_information_close_btn:hover {
+    background: var(--red_hover--)
+}
+#product_show_information_edit_btn:hover {
+    background: var(--green_hover--);
+}
+#product_show_information_description_span {
+    color: var(--special--);
+}
+#product_div_done_btn {
+    width: 13vw;
+    height: 8vh;
+    background: var(--close--);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+#product_div_done_btn:hover {
+    background: var(--red_hover--);
+}
+.product_div {
+    width: 80vw;
+    height: max-content;
+    max-height: 83vh;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    text-align: center;
+}
+.product {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    margin: 5px 0;
+    background: var(--color--);
+    width: 100%;
+    height: 10vh;
+    border: none;
+    border-radius: 10px;
+}
+.product:hover {
+    background: var(--hover--);
+    cursor: pointer;
+    scale: 1.005;
+}
+.product div {
+    width: 50px;
+    height: 50px;
+    margin-left: 15px;
+}
+.product div img {
+    width: 100%;
+    height: 100%;
+    border-radius: calc(100%/2);
+}
+.product_price {
+    margin-right: 15px;
+}
+.product_show_information img {
+    width: 50px;
+    height: 50px;
+    border-radius: calc(100%/2);
+}
+.product_show_information div {
+    display: flex;
+    flex-direction: row;
+    margin: 5px 0;
+    justify-content: space-around;
+    align-items: center;
+}
