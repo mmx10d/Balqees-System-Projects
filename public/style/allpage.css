@@ -35,6 +35,8 @@ body {
 }
 .bar_btn {
     width: 5%;
+    min-width: 50px;
+    max-width: 100px;
     max-width: 50px;
     margin: 5px 0 0 5px;
 }

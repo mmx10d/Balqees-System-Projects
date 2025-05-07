@@ -6,6 +6,10 @@ body{
 #search_div {
     display: flex;
     margin-bottom: 10px;
+    position: absolute;
+    left: 50%;
+    top: 50px;
+    translate: -50% 0;
 }
 #search_btn {
     display: flex;
@@ -165,6 +169,7 @@ body{
     overflow-y: scroll;
     scrollbar-width: none;
     text-align: center;
+    margin-top: 100px;
 }
 .product {
     position: relative;
