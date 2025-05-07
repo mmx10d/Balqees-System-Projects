@@ -40,6 +40,7 @@ body{
 #add_button {
     margin: 0 10px 0 0;
     width: 8vw;
+    min-width: 85px;
     height: 8vh;
     border: none;
     border-radius: 100px;
@@ -77,6 +78,7 @@ body{
 .order_products button {
     background: var(--close--);
     width: 13%;
+    min-width: 80px;
     border: none;
     border-radius: 100px;
     position: relative;

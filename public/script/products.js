@@ -211,6 +211,7 @@ product_show_information_remove_btn.onclick = () => {
     product_show_information.style.display = 'none';
     products.splice(last_click_of_product,1);
     product_div.innerHTML = '';
+    add_product_btn.style.display = '';
     update_products();
 }
 

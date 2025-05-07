@@ -23,18 +23,8 @@
     <h1 onclick="location.href='/'">طلبيات - بلقيس للعطارة</h1>
     <script>
         let table_body = document.querySelector('#table_body');
-        let orders = [
-    {
-        name:'كمون حب',
-        count_type: 'كيلو',
-        count: 5
-    },
-    {
-        name:'زيت اكليل الجبل',
-        count_type: 'حبة',
-        count: 15
-    }
-];
+        let orders = JSON.parse(sessionStorage.getItem('orders'));
+        sessionStorage.removeItem('orders')
 i = 0;
 while(i < orders.length){
     table_body.innerHTML += `

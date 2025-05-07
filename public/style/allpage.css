@@ -104,8 +104,8 @@ body {
     justify-content: center;
     align-items: center;
     position: absolute;
-    right: 10px;
-    bottom: 8%;
+    right: 10%;
+    bottom: 10%;
 }
 .add_product_btn:hover {
     background: var(--hover--);
@@ -123,7 +123,8 @@ body {
     left: 50%;
     translate: -50%;
     background: white;
-    width: 50vw;
+    width: 80vw;
+    max-width: 650px;
     height: max-content;
     border: 1px solid black;
     border-radius: 15px;
