@@ -43,9 +43,14 @@ order_add_add_btn.onclick = () => {
     }
 }
 print_btn.onclick =() => {
-    order_add_div.style.display = 'none';
-    sessionStorage.setItem('orders', JSON.stringify(orders));
-    location.href = '/printpage';
+    if(orders.length > 1){
+        order_add_div.style.display = 'none';
+        sessionStorage.setItem('orders', JSON.stringify(orders));
+        location.href = '/printpage';
+    }
+    else {
+        alert('لاتوجد طلبات للطباعة')
+    }
 }
 
 function update_orders() {
