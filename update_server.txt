@@ -1,2 +1,4 @@
+
 git add . && git commit -m "update" && git push origin main
+
 git checkout main && (git diff --quiet && git diff --cached --quiet || (git add . && git commit -m "Auto upload - %date% %time%")) && git push origin main

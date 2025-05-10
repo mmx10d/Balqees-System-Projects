@@ -29,6 +29,9 @@ add_button.onclick = () => {
 
 order_add_add_btn.onclick = () => {
     if(order_add_name_input.value!=''){
+        if(order_add_count_input.value ==''){
+            order_add_count_input.value = 1;
+        }
         order_add_div.style.display = 'none';
         orders.push(
             {
@@ -37,13 +40,14 @@ order_add_add_btn.onclick = () => {
                 count: Number(order_add_count_input.value)
             }
         )
+        order_add_count_input.value = '';
         update_orders();
     }else{
         alert('ادخل اسم الطلب')
     }
 }
 print_btn.onclick =() => {
-    if(orders.length > 1){
+    if(orders.length > 0){
         order_add_div.style.display = 'none';
         sessionStorage.setItem('orders', JSON.stringify(orders));
         location.href = '/printpage';

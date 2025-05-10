@@ -1,3 +1,16 @@
+if(localStorage.getItem('account')){
+    account = JSON.parse(localStorage.getItem('account'));
+    if(account.type=='guest'){
+        console.log('welcome a guest');
+    }
+}else{
+    localStorage.setItem('account',JSON.stringify({
+        type: 'guest',
+        name: 'free',
+        password: 'free'
+    }));
+    location.reload();
+}
 old = document.body.innerHTML;
 document.body.innerHTML=`
     <div class="head">
@@ -149,4 +162,18 @@ function open_other() {
 }
 function open_data_and_order(){
     location.href = '/data_and_order';
+}
+
+
+
+
+//----------------------------------------------
+function get(){
+    if(localStorage.getItem('products')){
+        return JSON.parse(localStorage.getItem('products'));
+    }
+    else{
+        sessionStorage.setItem('back');
+        location.href = '/products';
+    }
 }

@@ -4,63 +4,7 @@ const end_left_count = document.querySelector('#end_left_count');
 let end_products_btn;
 let wanted_date = Number(end_left_count.value);
 
-let products = [
-    {
-        photo: '/images/products/coffee.png',
-        name: 'قهوة',
-        price: '40',
-        description: 'هرري اصلي ماهي تقليد',
-        date:{
-            year: '2200',
-            month: '01',
-            day: '01'
-        }
-    },
-    {
-        photo: '/images/products/chia.png',
-        name: 'بذور الشيا',
-        price: '70',
-        description: 'حطه بمويه 10 دقايق تساعد السمين على النحف',
-        date:{
-            year: '2200',
-            month: '06',
-            day: '01'
-        }
-    },
-    {
-        photo: '/images/products/pistachio.png',
-        name: 'فستق',
-        price: '60',
-        description: 'جامبو سوبر درجه اولى',
-        date:{
-            year: '2027',
-            month: '01',
-            day: '01'
-        }
-    },
-    {
-        photo: '/images/products/pistachio.png',
-        name: 'زيت الشعر',
-        price: '60',
-        description: 'is jambo and super',
-        date:{
-            year: '2025',
-            month: '06',
-            day: '02'
-        }
-    },
-    {
-        photo: '/images/products/pistafchio.png',
-        name: 'زيت اكليل الجبل',
-        price: '60',
-        description: 'is jambo and super',
-        date:{
-            year: '2025',
-            month: '05',
-            day: '05'
-        }
-    }
-]
+let products = get();
 
 end_left_count.onchange = () => {
     if(end_left_count.value == 'custom'){

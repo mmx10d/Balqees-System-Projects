@@ -68,8 +68,8 @@ body {
     justify-content: center;
 }
 .bar_full {
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     background: rgba(0, 0, 0, 0.3);
     position: absolute;
     left: 0;

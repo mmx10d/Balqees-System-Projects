@@ -1,0 +1,87 @@
+span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#body {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+}
+#body div {
+    display: flex;
+    justify-content: space-around;
+    width: 80vw;
+    max-width: 700px;
+}
+#body div div {
+    margin: 5px 0;
+    box-shadow: 0 0 0 1px;
+    width: 70%;
+    border-radius: 10px;
+}
+#body div span {
+    width: 30%;
+}
+#true_dark_mod {
+    width: 10vw;
+    min-width: 50px;
+    max-width: 100px;
+    height: 10vh;
+    min-height: 50px;
+    max-height: 50px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+#false_dark_mod {
+    width: 10vw;
+    min-width: 50px;
+    max-width: 100px;
+    height: 10vh;
+    min-height: 50px;
+    max-height: 50px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+#true_dark_mod:hover {
+    box-shadow: 0 0 1px 1px black;
+    background: var(--ok--);
+}
+#false_dark_mod:hover {
+    box-shadow: 0 0 1px 1px black;
+    background: var(--close--);
+}
+#english_language_btn {
+    width: 10vw;
+    min-width: 50px;
+    max-width: 100px;
+    height: 10vh;
+    min-height: 50px;
+    max-height: 50px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+#arabic_language_btn {
+    width: 10vw;
+    min-width: 50px;
+    max-width: 100px;
+    height: 10vh;
+    min-height: 50px;
+    max-height: 50px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+#english_language_btn:hover {
+    box-shadow: 0 0 1px 1px black;
+    color: white;
+    background: black;
+    letter-spacing: 2px;
+}
+#arabic_language_btn:hover {
+    box-shadow: 0 0 1px 1px black;
+    color: white;
+    background: black;
+    letter-spacing: 2px;
+}
