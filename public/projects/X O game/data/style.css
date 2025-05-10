@@ -1,0 +1,160 @@
+body{
+    background:rgba(0,0,0,1);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.game{
+    width:400px;
+    height:400px; /* can edit in javascript*/
+    padding:0;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    position: absolute;
+    left:50%;
+    top:10%;
+    translate: -50%;
+}
+.box{
+    width: 100%;
+    height: 100%;
+    margin:0;
+    padding:0;
+    border: solid 1px rgba(255,255,255,1);
+}
+.result{
+    width:320px;
+    height: 320px;
+    padding:5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color:white;
+    background: black;
+    position: absolute;
+    left: 50%;
+    top:15%;
+    translate: -50%;
+    border:white solid 1px;
+    border-radius: 20px;
+}
+
+.result span{
+    text-align: center;
+    align-content: center;
+    font-size: 22px;
+    font-weight: 500;
+    width:100%;
+    height:20%;
+    border-bottom:white solid 1px;
+}
+.result div{
+    width:60px;
+    height:60px;
+    border-radius:50%;
+    position: relative;
+    left: 50%;
+    translate: -50%;
+}
+.result button{
+    width:100%;
+    height:17%;
+    border-radius: 50px;
+    border: none;
+    font-weight: 600;
+    font-size: 20px;
+    background:rgb(6, 255, 6)
+}
+.setting{
+    visibility: hidden;
+    opacity: 0;
+    width:150px;
+    height: 0;
+    position:absolute;
+    left:20%;
+    top:18%;
+    border: white solid 1px;
+    color:white;
+    font-weight: 500;
+    transition:0.3s;
+}
+.setting div{
+    width:100%;
+    text-align: center;
+    align-items: center;
+}
+.setting div span{
+    font-weight: 500;
+}
+.setting button{
+    width:99%;
+    height:25px;
+    font-weight: 500;
+    font-size: 16px;
+    border:solid 1px white;
+    border-radius: 1px;
+    transition-duration: 0.2s;
+
+}
+.setting button:hover{
+    background: rgb(184, 184, 184);
+}
+.setting div input{
+    width:50px;
+    height:50px;
+    border: solid 1px white;
+    padding:0;
+}
+.bot_setting div{
+    display: flex;
+    flex-direction: row;
+}
+.bot_setting div button{
+    width:99%;
+    height:25px;
+    background:rgb(1, 153, 173);
+    color:white;
+    font-weight: 500;
+    font-size: 16px;
+    border:solid 1px white;
+    border-radius: 1px;
+}
+#clear_point{
+    background: rgb(255, 0, 0);
+    color:white;
+    transition-duration:0.2s;
+}
+#clear_point:hover{
+    background: rgb(194, 7, 7);
+    color:white;
+}
+#save_button{
+    background: rgb(46, 255, 5);
+    color:black;
+    transition-duration: 0.2s;
+}
+#save_button:hover{
+    background: rgb(51, 202, 21);
+}
+#setting_button{
+    width:50px;
+    height:50px;
+    border: solid white 1px;
+    color:white;
+    border-radius:50%;
+    text-align: center;
+    align-items: center;
+    padding:0;
+    margin:0;
+    position:absolute;
+    top:66%;
+    left:24%;
+    background:transparent;
+    transition-duration: 0.1s;
+}
+#setting_button:hover{
+    background:white;
+    color:black;
+}
+#cancel_button{
+    transition-duration: 0.3s;
+}

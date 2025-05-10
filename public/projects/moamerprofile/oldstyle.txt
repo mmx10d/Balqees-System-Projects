@@ -1,0 +1,104 @@
+::selection{
+    background: #e2e;
+}
+* {
+    padding: 0;
+    margin: 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: 0.3s;
+}
+img {
+    width: 100%;
+    height: 100%;
+}
+.content {
+    text-align: center;
+}
+.head {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 50px;
+}
+.darkmode {
+    position: relative;
+    margin: 10px 0 0 10px;
+    width: 80px;
+    height: 30px;
+    border-radius: 100px;
+    background: rgb(230, 230, 230);
+}
+.darkmode div{
+    height: 100%;
+    width: 50%;
+    border-radius: 100px;
+    background: rgb(160, 160, 160);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 0;
+}
+.lang {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 10px 0 0;
+    width: 80px;
+    height: 30px;
+    border-radius: 20px;
+    background: rgb(230, 230, 230);
+    color: black;
+}
+.photo {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+}
+.photo img {
+    border-radius: 100%;
+    box-shadow: 0 0 2px;
+}
+.name {
+    font-size: 45px;
+    font-weight: bold;
+}
+.title {
+    margin: 10px 0 5px 0;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 0 10px 0 0;
+}
+.data p {
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+.contact {
+    margin-top: 15px;
+}
+.contact_title {
+    margin: 0 0 5px 0;
+    font-size: 25px;
+    font-weight: 600;
+}
+.contact_data a{
+    display: inline-flex;
+    justify-content: center;
+    margin: 5px;
+    align-items: center;
+    font-size: x-large;
+    font-weight: 800;
+    width: 200px;
+    height: 50px;
+    background: blue;
+    border-radius: 100px;
+    color: white;
+    text-decoration: none;
+}
+.darkmode:hover, .lang {
+    cursor: pointer;
+}
+.contact_data a:hover {
+    color: rgb(48, 34, 255);
+    background: white;
+}

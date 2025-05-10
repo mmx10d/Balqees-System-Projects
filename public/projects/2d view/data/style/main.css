@@ -1,0 +1,24 @@
+*{
+    padding: 0;
+    margin: 0;
+    user-select: none;
+}
+#view{
+    width: 600px;
+    height: 600px;
+    position: absolute;
+    left: 50%;
+    top: 10px;
+    translate: -50%;
+    box-shadow: 0 0 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#img{
+    width: auto;
+    height: 50%;
+}
+p{
+    margin: 20px 20px 5px 20px;
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="data/style/style.css">
+    <link rel="shortcut icon" href="data/icon.ico" type="image/x-icon">
+    <title>Media Player</title>
+</head>
+<body>
+    <div class="head">
+        <div class="setting" id="setting">
+
+            <img id="imgSetting" src="data/icons/setting.ico" alt="Setting">
+
+        </div>
+        <div class="playlist">
+
+            <img src="data/icons/menu.ico" alt="Menu">
+
+        </div>
+    </div>
+    <div class="content">
+        <div class="videoPlayer">
+            <video id="video" src="videos/1.mp4"></video>
+            <div class="controls">
+                <div class="controlsvolume" id="controlsvolume">
+                    <div class="volumeline" id="volumeline"></div>
+                </div>
+                <div class="controlsPlay" id="controlsPlay">
+                    <img src="data/icons/play.ico" id="imgControlsPlay">
+                </div>
+                <div class="controlsLine" id="controlsLine">
+                    <div class="controlsMoveLine" id="controlsMoveLine"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="settings_bar">
+        <div><!--Null--></div>
+        <input type="file" id="file" multiple>
+        <input type="checkbox" id="ultra" value="false">
+        <span>ultra</span>
+        <div><!--Null--></div>
+    </div>
+    <div class="video_list"></div>
+    <div class="null_">
+        <span>Enter Videos</span>
+        <span>Enter Videos</span>
+        <span>Enter Videos</span>
+        <span>Enter Videos</span>
+        <span>Enter Videos</span>
+        <span>Enter Videos</span>
+        <span>Enter Videos</span>
+        <span>Enter Videos</span>
+        <span>Enter Videos</span>
+    </div>
+    <script src="data/js/script.js"></script>
+</body>
+</html>

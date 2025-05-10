@@ -1,0 +1,97 @@
+const phone = '966534325373';
+let AR = {
+    lan:'عربي',
+    page:'بلقيس',
+    name:'بلقيس للعطارة',
+    title:'متوفر كل شئ مثل :',
+    data:[
+        'قهوة' ,
+        'مكسرات' ,
+        'بهارات' ,
+        'عسل' ,
+        'زيوت'
+    ],
+    contact:{
+        title:'للتواصل',
+        content:[
+            'واتساب',
+            'هاتف'
+        ]
+    }
+}
+let EN = {
+    lan:'EN',
+    page:'BALQEES',
+    name:'Balqis for Perfumery',
+    title:'Everything is available such as :',
+    data:[
+        'coffe' ,
+        'Nuts' ,
+        'spices' ,
+        'honey' ,
+        'oils'
+    ],
+    contact:{
+        title:'contact',
+        content:[
+            'whatsapp',
+            'phone'
+        ]
+    }
+}
+const content = document.querySelector('.content');
+const darkmode = document.querySelector('.darkmode');
+const lang = document.querySelector('.lang');
+const photo = document.querySelector('.photo').querySelector('img');
+const namee = document.querySelector('.name');
+const title = document.querySelector('.title');
+const data = document.querySelector('.data');
+const contact = document.querySelector('.contact');
+let original = true;
+
+darkmode.onclick = ()=>{
+    if(document.body.style.background == 'black'){
+        document.body.style.background = 'white';
+        document.body.style.color = 'black';
+        darkmode.querySelector('div').style.right = 0;
+        setTimeout(()=>{
+            darkmode.querySelector('div').innerText = '🌞'
+        },100);
+    }
+    else{
+        document.body.style.background = 'black';
+        document.body.style.color = 'white';
+        darkmode.querySelector('div').style.right = '40px';
+        setTimeout(()=>{
+            darkmode.querySelector('div').innerText = '🌑'
+        },100);
+    }
+}
+lang.onclick = ()=>{
+    if(original){
+        original=false;
+        update(EN);
+    }else{
+        original=true;
+        update(AR);
+    }
+}
+
+
+update(AR);
+function update(language){
+    lang.innerText = language.lan;
+    document.title = language.page;
+    namee.innerText = language.name;
+    title.innerText = language.title;
+    data.innerHTML = `
+        <p>${language.data[0]}</p>
+        <p>${language.data[1]}</p>
+        <p>${language.data[2]}</p>
+        <p>${language.data[3]}</p>
+        <p>${language.data[4]}</p>
+    `;
+    contact.querySelector('.contact_title').querySelector('span').innerText = language.contact.title;
+    contact.querySelector('.contact_data').querySelectorAll('a')[0].innerText = language.contact.content[0];
+    contact.querySelector('.contact_data').querySelectorAll('a')[1].innerText = language.contact.content[1];
+}

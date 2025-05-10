@@ -1,0 +1,1 @@
+first player color in win is reversed

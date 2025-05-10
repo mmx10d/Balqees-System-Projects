@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>typing test</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            position: relative;
+        }
+        textarea{
+            opacity: 0.5;
+            width: 400px;
+            height: 200px;
+            padding: 5px;
+            font-size: 2rem;
+            position: relative;
+            z-index: 1;
+        }
+        #faketext{
+            opacity: 0.5;
+            position: absolute;
+            left:0;
+            top:0;
+            z-index: 0;
+        }
+        input{
+            width: 300px;
+            height: 59px;
+        }
+        button{
+            width: 100px;
+            height: 50px;
+            transition: 0.25s;
+            border: none;
+            border-radius: 2px;
+        }
+        #clear_text:hover{
+            background: red;
+        }
+        #clear_progress:hover{
+            background: rgb(240, 255, 23);
+        }
+        #add_btn:hover{
+            background: rgb(46, 209, 14);
+        }
+    </style>
+</head>
+<body>
+    <textarea id="textarea"></textarea>
+    <textarea disabled id="faketext">Hello my name is awwad</textarea>
+    <input type="text" placeholder="add Your text" id="add_txt">
+    <button id="add_btn">Add</button>
+    <button id="clear_progress">clear progress</button>
+    <button id="clear_text">clear text</button>
+    <script>
+        let text = document.getElementById('textarea');
+        let fake = document.getElementById('faketext');
+        let add_txt = document.getElementById('add_txt');
+        let add_btn = document.getElementById('add_btn');
+        let clear_progress = document.getElementById('clear_progress');
+        let clear_text = document.getElementById('clear_text');
+        add_btn.onclick = ()=>{
+            if(add_txt.value ==''){
+                add_txt.value = 'test';
+                setTimeout(()=>{
+                    fake.innerText = add_txt.value;
+                    add_txt.value = '';
+                },500)
+            }else{
+                fake.innerText = add_txt.value;
+            }
+        };
+        clear_progress.onclick = ()=>{
+            localStorage.removeItem('type_progress');
+            text.value = '';
+        };
+        clear_text.onclick = ()=>{
+            localStorage.removeItem('type_progress');
+            localStorage.removeItem('type_word');
+            text.value = '';
+            fake.value ='';
+        };
+    </script>
+    <script>
+        onload = ()=>{
+            fake.innerText = localStorage.getItem('type_word');
+            text.innerText = localStorage.getItem('type_progress');
+            fake.scrollTop = text.scrollTop;
+        };
+        text.addEventListener('scroll',()=>{
+            fake.scrollTop = text.scrollTop;
+        });
+        text.addEventListener('keyup',()=>{
+            localStorage.setItem('type_progress',text.value);
+        });
+    </script>
+</body>
+</html>

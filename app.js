@@ -41,6 +41,9 @@ app.get('/printpage', (req, res) => {
 app.get('/setting', (req, res) => {
     res.render('setting')
 })
+app.get('/other_projects', (req, res) => {
+    res.render('other_projects')
+})
 app.post('/test',(req ,res) => {
     req.body = {
         photo: 'defualte',

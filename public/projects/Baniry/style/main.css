@@ -1,0 +1,104 @@
+*{
+    padding: 0;
+    margin: 0;
+    color: white;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+:root {
+    --background_color--: rgb(70, 70, 80);
+    --color_effect--: 0.4;
+}
+body {
+    background: var(--background_color--);
+    font-size: 2rem;
+}
+.main {
+    position: relative;
+    top: 10rem;
+}
+.ban_all {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    position: relative;
+    left: 50%;
+    translate: -50%;
+    text-align: center;
+    align-items: center;
+    width: min-content;
+    height: min-content;
+    margin: 10px 0;
+}
+.ban_all button {
+    width: 70px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(121, 121, 121);
+    font-size: 2rem;
+    text-shadow: 0 0 3px black;
+    border: none;
+    box-shadow: 0 0 1px black;
+    border-radius: 2px;
+    margin: 0 3px;
+}
+
+.all_keys {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    position: relative;
+    left: 50%;
+    translate: -50%;
+    text-align: center;
+    align-items: center;
+    width: min-content;
+    height: min-content;
+    margin: 10px 0;
+}
+
+.all_keys span {
+    font-size: 3rem;
+    user-select: none;
+    cursor: pointer;
+    padding: 0 20px;
+    margin: 0 3px;
+}
+
+.result {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    translate: -50%;
+    text-align: center;
+    align-items: center;
+    width: 200px;
+    height: 50px;
+    margin: 10px 0;
+}
+
+.result span {
+    font-size: 5rem;
+}
+.ban_action {
+    cursor:copy;
+}
+#ban_add:hover {
+    background: rgb(0, 255, 0, var(--color_effect--));
+}
+#ban_remove:hover {
+    background: rgb(255, 0, 0, var(--color_effect--));
+}
+.opt {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100px;
+    height: 100px;
+}
+.hide {
+    display: none;
+}

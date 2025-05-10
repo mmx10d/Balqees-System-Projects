@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="##">
+    <meta name="author" content="MMX10d">
+    <link rel="stylesheet" href="style.css">
+    <title>page</title>
+</head>
+<body>
+    <div class="content">
+        <div class="head">
+            <div class="darkmode">
+                <div>🌞</div>
+            </div>
+            <div class="lang">EN</div>
+        </div>
+        <div class="body">
+            <div class="photo">
+                <img src="icon.png">
+            </div>
+            <p class="name">name</p>
+            <p class="title">title</p>
+            <div class="data">
+                <p>item</p>
+                <p>item</p>
+                <p>item</p>
+                <p>item</p>
+                <p>item</p>
+            </div>
+        </div>
+        <div class="contact">
+            <div class="contact_title">
+                <span>contact</span>
+                <span>:</span>
+            </div>
+            <div class="contact_data">
+                <a href="https://wa.me/+966534325373">whatsapp</a>
+                <a href="tel:+966534325373">phone</a>
+            </div>
+        </div>
+        <div style="display:block;">
+            <audio src="./lan.mp3" id="lan_sound">lan</audio>
+            <audio src="./mod.mp3" id="mod_sound">mod</audio>
+        </div>
+    </div>
+    <script>
+    const lan_sound = document.querySelector('#lan_sound')
+    const mod_sound = document.querySelector('#mod_sound')
+    const phone = '966534325373';
+    let lan_clicks = 0;
+    let mod_clicks = 0;
+        let AR = {
+            lan:'عربي',
+            page:'بلقيس',
+            name:'بلقيس للعطارة',
+            title:'متوفر كل شئ مثل :',
+            data:[
+                'قهوة' ,
+                'مكسرات' ,
+                'بهارات' ,
+                'عسل' ,
+                'زيوت'
+            ],
+            contact:{
+                title:'للتواصل',
+                content:[
+                    'واتساب',
+                    'هاتف'
+                ]
+            }
+        }
+        let unknow = {
+            lan:'ẬÈẺẼÉẸÊỀỂỄẾỆÌỈĨÍỊÒỎÕÓỌÔỒỔỖỐỘƠ',
+            page:' ঋ কৃ এ কে ঐ কৈ ও কো ঔ ',
+            name:'ऍ ऎ ए ऐ ऑ ऒ ओ ओ क ख ग  ẬÈẺẼÉẸÊỀỂỄẾỆÌỈĨÍỊÒỎÕÓỌÔỒỔỖỐỘƠ',
+            title:'donkey:',
+            data:[
+                'MMX10d' ,
+                'èẻẽéẹêềểễếệìỉĩíịòỏõó' ,
+                'ẬÈẺẼÉẸÊỀỂỄẾỆÌỈĨÍỊÒỎÕÓỌÔỒỔỖỐỘƠ' ,
+                ' ঋ কৃ এ কে ঐ কৈ ও কো ঔ ' ,
+                'ẬÈẺẼÉẸÊỀỂỄẾỆÌỈĨÍỊÒỎÕÓỌÔỒỔỖỐỘƠ'
+            ],
+            contact:{
+                title:'ẬÈẺẼÉẸÊỀỂỄẾỆÌỈĨÍỊÒỎÕÓỌÔỒỔỖỐỘƠ',
+                content:[
+                    'ẬÈẺẼÉẸÊỀỂỄẾỆÌỈĨÍỊÒỎÕÓỌÔỒỔỖỐỘƠ',
+                    'ẬÈẺẼÉẸÊỀỂỄẾỆÌỈĨÍỊÒỎÕÓỌÔỒỔỖỐỘƠ'
+                ]
+            }
+        }
+        let EN = {
+            lan:'EN',
+            page:'BALQEES',
+            name:'Balqis for Perfumery',
+            title:'Everything is available such as :',
+            data:[
+                'coffe' ,
+               'Nuts' ,
+                'spices' ,
+                'honey' ,
+                'oils'
+            ],
+            contact:{
+                title:'contact',
+                content:[
+                    'whatsapp',
+                    'phone'
+                ]
+            }
+        }
+        let empty = {
+            lan:'',
+            page:'',
+            name:'  ',
+            title:'',
+            data:[
+                '' ,
+               '' ,
+                '' ,
+                '' ,
+                ''
+            ],
+            contact:{
+                title:'',
+                content:[
+                    '',
+                    ''
+                ]
+            }
+        }
+        const content = document.querySelector('.content');
+        const darkmode = document.querySelector('.darkmode');
+        const lang = document.querySelector('.lang');
+        const photo = document.querySelector('.photo').querySelector('img');
+        const namee = document.querySelector('.name');
+        const title = document.querySelector('.title');
+        const data = document.querySelector('.data');
+        const contact = document.querySelector('.contact');
+        let original = true;
+        
+        darkmode.onclick = ()=>{
+            if(mod_clicks == 15||mod_clicks==16){
+                mod_prank();
+            }
+            mod_clicks++;
+            if(document.body.style.background == 'black'){
+                document.body.style.background = 'white';
+                document.body.style.color = 'black';
+                darkmode.querySelector('div').style.right = 0;
+                setTimeout(()=>{
+                    darkmode.querySelector('div').innerText = '🌞'
+                },100);
+            }
+            else{
+                document.body.style.background = 'black';
+                document.body.style.color = 'white';
+                darkmode.querySelector('div').style.right = '40px';
+                setTimeout(()=>{
+                    darkmode.querySelector('div').innerText = '🌑'
+                },100);
+            }
+        }
+        lang.onclick = ()=>{
+            if(lan_clicks == 15||lan_clicks==16){
+                lan_prank();
+            }
+            lan_clicks++;
+            if(original){
+                original=false;
+                update(EN);
+            }else{
+                original=true;
+                update(AR);
+            }
+        }
+        
+        
+        update(AR);
+        function update(language){
+            lang.innerText = language.lan;
+            document.title = language.page;
+            namee.innerText = language.name;
+            title.innerText = language.title;
+            data.innerHTML = `
+                <p>${language.data[0]}</p>
+                <p>${language.data[1]}</p>
+                <p>${language.data[2]}</p>
+                <p>${language.data[3]}</p>
+                <p>${language.data[4]}</p>
+            `;
+            contact.querySelector('.contact_title').querySelector('span').innerText = language.contact.title;
+            contact.querySelector('.contact_data').querySelectorAll('a')[0].innerText = language.contact.content[0];
+            contact.querySelector('.contact_data').querySelectorAll('a')[1].innerText = language.contact.content[1];
+        }
+        function mod_prank(){
+            darkmode.style.display = 'none';
+            document.body.innerHTML += 
+            `
+            <div id='tnt' style='width: 100px;height: 100px;background: white;background-size: cover;background-image: url(./tnt.webp);position: absolute;left: 50%;top: -100px;z-index: 50;transition: 0.3s;translate: -50%;box-shadow: 0 0 2px;'></div>
+            `;
+            let tnt = document.querySelector('#tnt');
+            setTimeout(() => {
+                tnt.style.top = '400px';
+                mod_sound.play();
+            });
+            setTimeout(()=>{
+                tnt.style.backgroundImage = '';
+            },1000);
+            setTimeout(()=>{
+                tnt.style.backgroundImage = 'url(./tnt.webp)';
+            },2000);
+            setTimeout(()=>{
+                tnt.style.backgroundImage = '';
+            },2500);
+            setTimeout(()=>{
+                tnt.style.backgroundImage = 'url(./tnt.webp)';
+            },3000);
+            setTimeout(()=>{
+                tnt.style.backgroundImage = '';
+            },4000);
+            setTimeout(()=>{
+            document.body.style.transition = '0.001s';
+            document.body.style.color = 'white';
+            document.body.style.background = 'white';
+                setTimeout(() => {
+                    location.reload();
+                },3000);
+            document.body.innerHTML = '';
+            },4300)
+        }
+
+        function lan_prank(){
+            lan_sound.play();
+            setTimeout(() => {
+                update(unknow);
+
+            })
+            lang.style.display = 'none';
+            setTimeout(() =>{
+                location.reload();
+            },5000);
+        }
+
+
+        </script>
+</body>
+</html>

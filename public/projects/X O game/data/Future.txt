@@ -1,0 +1,46 @@
+possible add a robot player...
+//
+in box[i] clicked
+add some point to check
+add change player color
+add point saves and point clear
+old code:
+if(clicked == 9||clicked == 5 ||clicked == 6 ||clicked == 7||clicked == 8){
+    if(sq1 == sq2 &&sq2 ==sq3 &&turn ==0){
+        confirm("red win in : 1=2=3 red");
+    }else if(sq3 == sq6 &&sq6 ==sq9 &&turn ==0){
+        confirm("red win in : 3=6=9 red");
+    }else if(sq9 == sq8 &&sq8 ==sq7 &&turn ==0){
+        confirm("red win in : 9=8=7 red");
+    }else if(sq7 == sq4 &&sq4 ==sq1 &&turn ==0){
+        confirm("red win in : 7=4=1 red");
+    }else if(sq1 == sq5 &&sq5 ==sq9 &&turn ==0){
+        confirm("red win in : 1=5=9 red");
+    }else if(sq3 == sq5 &&sq5 ==sq7 &&turn ==0){
+        confirm("red win in : 3=5=7 red");
+    }else if(sq2 == sq5 &&sq5 ==sq8 &&turn ==0){
+        confirm("red win in : 2=5=8 red");
+    }else if(sq4 == sq5 &&sq5 ==sq6 &&turn ==0){
+        confirm("red win in : 4=5=6 red");
+    }else if(sq1 == sq2 &&sq2 ==sq3 &&turn ==1){
+        confirm("blue win in : 1=2=3 blue");
+    }else if(sq3 == sq6 &&sq6 ==sq9 &&turn ==1){
+        confirm("blue win in : 3=6=9 blue");
+    }else if(sq9 == sq8 &&sq8 ==sq7 &&turn ==1){
+        confirm("blue win in : 9=8=7 blue");
+    }else if(sq7 == sq4 &&sq4 ==sq1 &&turn ==1){
+        confirm("blue win in : 7=4=1 blue");
+    }else if(sq1 == sq5 &&sq5 ==sq9 &&turn ==1){
+        confirm("blue win in : 1=5=9 blue");
+    }else if(sq3 == sq5 &&sq5 ==sq7 &&turn ==1){
+        confirm("blue win in : 3=5=7 blue");
+    }else if(sq2 == sq5 &&sq5 ==sq8 &&turn ==1){
+        confirm("blue win in : 2=5=8 blue");
+    }else if(sq4 == sq5 &&sq5 ==sq6 &&turn ==1){
+        confirm("blue win in : 4=5=6 blue");
+    }else{
+        confirm("draw");
+    };
+}else{
+    SyntaxError("please dont edit with the game...");
+};

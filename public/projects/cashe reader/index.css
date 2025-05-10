@@ -1,0 +1,87 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    background: rgb(15, 15, 15);
+    color: white;
+}
+.content {
+    position: relative;
+    left: 50%;
+    top: 10px;
+    translate: -50% 0;
+    width: 95vw;
+    height: 80vh;
+    user-select: none;
+}
+.content label {
+    margin: 0 0 0 5px;
+}
+.content input {
+    margin: 0 5px 0 0;
+    width: 1rem;
+    height: 1rem;
+}
+.filereader{
+    width: auto !important;
+    height: auto !important;
+}
+.download_btn {
+    position: absolute;
+    right: 10px;
+    top: 0;
+    width: 40px;
+    background-color: rgb(50, 50, 50);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 3px 0 white;
+    margin: 0 0 0 5px;
+}
+.file_type {
+    position: absolute;
+    margin: 0;
+    right: 53px;
+    top: 0;
+    text-align: center;
+    max-width: max-content;
+    font-size: 15px;
+    background-color: rgb(50, 50, 50);
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+.player {
+    height: 100%;
+    box-shadow: 0 0 2px 1px white;
+    text-align: center;
+}
+.player img,.player video{
+    height: 100%;
+    max-width: 100%;
+    box-shadow: 0 0 2px 1px white;
+}
+.player audio {
+    position: relative;
+    top: 50%;
+}
+hr {
+    margin: 2rem 0;
+}
+.next {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 10%;
+    height: 100%;
+    font-size: 20px;
+}
+.back {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 10%;
+    height: 100%;
+    font-size: 20px;
+}
