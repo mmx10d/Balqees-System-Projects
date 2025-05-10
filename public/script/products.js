@@ -88,24 +88,35 @@ if(isfirsttime){
             }
         },
         {
-            photo: '/images/products/pistachio.png',
-            name: 'زيت الشعر',
-            price: '60',
-            description: 'is jambo and super',
+            photo: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3xRgajM6LZcQHKAwo-PYIfBmPGaKyrQlezPKWWm-1RVr102o5Zw&s=10&ec=72940544',
+            name: 'ماء الورد',
+            price: '7',
+            description: 'ممتاز للبشرة',
             date:{
                 year: '2025',
-                month: '06',
-                day: '02'
+                month: '08',
+                day: '24'
             }
         },
         {
-            photo: '/images/products/pistafchio.png',
-            name: 'زيت اكليل الجبل',
-            price: '60',
-            description: 'is jambo and super',
+            photo: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdyKjHUR_Zl-1T20NR13ah9MEiq7ubiI7c_JOjSxtOVrwK8xiymw&s=10&ec=72940544',
+            name: 'بخور امراتي',
+            price: '999',
+            description: 'للرايقين فقط',
+            date:{
+                year: '2022',
+                month: '05',
+                day: '05'
+            }
+        },
+        {
+            photo: 'https://www.google.com/imgres?q=%D8%AE%D9%84%20%D8%A7%D9%84%D8%AA%D9%81%D8%A7%D8%AD&imgurl=https%3A%2F%2Fcdn.salla.sa%2FqQqpAm%2F74fa2e66-8e65-4337-b279-21f954e9d25c-1000x1000-GwxBrfBgO1kTkVLPztlMPojbgzyLllJO08kYUwxw.jpg&imgrefurl=https%3A%2F%2Fvillagemarket.com.sa%2F%25D8%25A8%25D8%25B1%25D8%25A7%25D8%25BA-%25D8%25AE%25D9%2584-%25D8%25A7%25D9%2584%25D8%25AA%25D9%2581%25D8%25A7%25D8%25AD-%25D8%25A7%25D9%2584%25D8%25B9%25D8%25B6%25D9%2588%25D9%258A-%25D8%25A7%25D9%2584%25D8%25B7%25D8%25A8%25D9%258A%25D8%25B9%25D9%258A-100-946-%25D9%2585%25D9%2584%2Fp1732898382&docid=pgtEUraIIsl3GM&tbnid=jsz8OyjcQyAYCM&vet=12ahUKEwj54uDD2pmNAxVuxAIHHfabFxoQM3oECBkQAA..i&w=1000&h=1000&hcb=2&ved=2ahUKEwj54uDD2pmNAxVuxAIHHfabFxoQM3oECBkQAA',
+            name: 'خل التفاح',
+            price: '38',
+            description: '',
             date:{
                 year: '2025',
-                month: '05',
+                month: '09',
                 day: '05'
             }
         }
@@ -297,15 +308,20 @@ product_show_information_remove_btn.onclick = () => {
 let search;
 search_btn.onclick = () => {
     search = search_input.value.trim();
-    if(search_input.value!='[update]'){
-        if(search!=''){
+    if(search!=''){
+        if(search == '[update]'){
+            add_more_products();
+            product_div.innerHTML = '';
+            update_products();
+        }
+        else if(search == '[clear]'){
+            localStorage.clear();
+            sessionStorage.clear();
+            location.reload();
+        }
+        else{
             search_in_products(search);
         }
-    }
-    else {
-        add_more_products();
-        product_div.innerHTML = '';
-        update_products();
     }
 }
 

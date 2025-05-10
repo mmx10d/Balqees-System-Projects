@@ -31,7 +31,7 @@ function update_ends_products(){
                 <div class="end_products">
                     <span class="end_products_name_span">${products[i].name}</span>
                     <div>
-                        <span>يوم</span>
+                        <span id="end_products_count_text_span">يوم</span>
                         <span id="end_products_count_day_span">${count_day}</span>
                     </div>
                     <button class="end_products_btn scale_animation">✅</button>
@@ -52,6 +52,10 @@ function update_ends_products(){
             fixed = Number(end_products[i].querySelector('#end_products_count_day_span').innerText);
             if(fixed > wanted_date){
                 end_products[i].remove();
+            }
+            if(fixed < 0){
+                end_products[i].querySelector('#end_products_count_text_span').innerText = '';
+                end_products[i].querySelector('#end_products_count_day_span').innerText = 'منتهي';
             }
             i++;
         }
