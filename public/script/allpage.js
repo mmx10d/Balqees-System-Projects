@@ -22,14 +22,28 @@ document.body.innerHTML=`
         </span>
     </div>
     <div class="bar_window" style="display: none;">
-        <div id="bar_home_btn" class="btn_head">الصفحة الرئيسية</div>
-        <div id="bar_products_btn" class="btn_head">المنتجات</div>
-        <div id="bar_calculator_btn" class="btn_head">حاسبة</div>
-        <div id="bar_date_btn" class="btn_head">تاريخ</div>
-        <div id="bar_orders_btn" class="btn_head">طلبات</div>
-        <div id="bar_price_calculator_btn" class="btn_head">حاسبة الأسعار</div>
-        <div id="bar_more_btn" class="btn_head">اخرى</div>
-        <span class="by_mmx10d">عواد معمر عبده عبدالله</span>
+        <div id="bar_home_btn" class="btn_head">
+          <img class="icon" src="../images/icons/home.png" placeholder="home">
+        </div>
+        <div id="bar_products_btn" class="btn_head">
+          <img class="icon" src="../images/icons/product.png" placeholder="product">
+        </div>
+        <div id="bar_calculator_btn" class="btn_head">
+          <img class="icon" src="../images/icons/calculator.png" placeholder="calculator">
+        </div>
+        <div id="bar_date_btn" class="btn_head">
+          <img class="icon" src="../images/icons/date.png" placeholder="date">
+        </div>
+        <div id="bar_orders_btn" class="btn_head">
+          <img class="icon" src="../images/icons/order.png" placeholder="order">
+        </div>
+        <div id="bar_price_calculator_btn" class="btn_head">
+          <img class="icon" src="../images/icons/price_calculator.png" placeholder="price calculator">
+        </div>
+        <div id="bar_more_btn" class="btn_head">
+          <img class="icon" src="../images/icons/more.png" placeholder="more">
+        </div>
+        <span class="by_mmx10d">عواد معمر</span>
     </div>
     <div class="bar_full" style="display: none;"></div>
 `;

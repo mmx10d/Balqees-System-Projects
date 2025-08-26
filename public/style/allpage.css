@@ -67,6 +67,17 @@ body {
     align-items: center;
     justify-content: center;
 }
+
+.icon{
+  height: 100%;
+  margin: 2px;
+  padding: 2px;
+}
+.icon_btn {
+  width: 20%;
+}
+
+
 .bar_full {
     width: 100vw;
     height: 100vh;
@@ -118,6 +129,10 @@ body {
 .hide {
     display: none;
 }
+.icon_fix_parent{
+  width: 10px;
+  height: 10px;
+}
 .info_show {
     position: absolute;
     left: 50%;
@@ -148,9 +163,9 @@ body {
 input {
     background: white;
     border: 1px solid black;
-    border-radius: 10px;
+    border-radius: 100px;
     height: 50px;
-    padding-left: 10px;
+    padding-left: 20px;
 }
 .scale_animation:hover {
     scale: 1.02;
