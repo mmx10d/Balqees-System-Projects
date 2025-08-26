@@ -171,8 +171,8 @@ body{
     background: var(--red_hover--);
 }
 .product_div {
-    width: 80vw;
-    height: max-content;
+    width: 90vw;
+    height:70vh;
     max-height: 83vh;
     overflow-y: scroll;
     scrollbar-width: none;
