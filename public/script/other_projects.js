@@ -30,6 +30,8 @@ for(let i = 0 ; i < projects_btn.length; i++){
             case 8:
                 location.href = '/projects/X O game';
                 break;
+            case 9:
+            location.href = '/projects/BIN translate/index.html'
             default:
                 alert('error');
         }
